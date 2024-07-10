@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registeration </title>
+  <style>
+
+    body {
+   font-family: Baskerville Old Face;
+   background-image: linear-gradient(to top, rgba(0, 255, 0, 0.712),black, rgba(0, 0, 255, 0.75));
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 102vh;
+}
+
+#signup-box {
+   background-color: rgb(235, 224, 224);
+   border-radius: 13px;
+   box-shadow: 10 10 5px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   width: 315px;
+   height:550x;
+   border: 3px solid rgb(23, 200, 195);
+   
+}
+
+#signup-box h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color:rgb(242, 55, 18);
+}
+
+#signup-box input[type="text"]
+{
+   width: 80%;
+   padding: 10px;
+   left: 40px;
+   border: 5px rgba(21, 19, 19, 0.752);
+   border-radius: 20px;
+   box-sizing: border-box;
+   align-items: center;
+}
+
+.btn-gradient {
+   background: linear-gradient(to right, #e77510, #ffdd00);
+   color: rgb(84, 13, 183);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .btn-gradient:hover {
+   background: linear-gradient(to right, #c6d0db, #00c3cd);
+   scale:1.2;
+        transition: scale 1s;
+ }
+ </style>
+</head>
+<body bgcolor="silver">
+  <center>
+    <section id="signup">
+        <div class="container mt-3 contactContent">
+                <div id="signup-box">
+                  <h2> Registeration </h2>
+                <form>
+                   <br>
+                    <input type="text" placeholder="Enter your id" id="id">
+                     </br>
+                   <br>
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                     </br>
+                   <br>
+                    <input type="text" placeholder="Enter Your Username" id="uname">
+                     </br>
+                   <br>
+                    <input type="text" placeholder="Enter your mobile no." id="phone">
+                  </br>
+                    <br>
+                    <input type="text" placeholder="Enter Your Email" id="gmail">
+                  </br>
+                    <br>
+                    <input type="text" placeholder="Enter Password" id="pass">
+                  </br>
+                  <br>
+                    <input type="text" placeholder="Enter Confirm Password" id="cpass">
+                  </br>
+                  <h5> Don't Have an Account? Registere. </h5>
+        <br>
+        <button class="btn btn-gradient" onclick="sub()"> Submit </button>
+
+     </br>
+    </div>          
+    
+    </form>
+            
+                <!-- <button style="background-color: rgb(214, 210, 229);" type="button" class="btn btn-
+     success mt-3" onclick="alert('submitted ')"> submit </button> -->
+            </div>
+        </div>
+</section>
+</center>
+<script src="./apidata.js"></script>
+
+</body>
+</html>
