@@ -16,7 +16,7 @@ function sub(){
       "pass":password,
       "cpass":cpassword
     }
-      fetch('http://localhost:3000/registration',
+      fetch('http://localhost:3000/signup',
     {
       method:"POST",
       headers:{
@@ -26,5 +26,5 @@ function sub(){
 
     })
     .then(response => response.json())
-    .then(Data => console.log(registration));
+    .then(signup => console.log(signup));
 }
