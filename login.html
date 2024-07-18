@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+      <meta charset="UTF-8">
+      <title>Login form</title>
+      <link rel="stylesheet" href="Login.css">
+       <!--  Font Awesome Cdn Link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
-    <input type="text" placeholder="Enter Your ID" id="username">
-    <input type="text" placeholder="Enter Your Password" id="Password">
-    <button onclick="login()">login</button>
-    <script src="./login.js"></script>
-</body>
-</html>
+    <body>
+      <div class="wrapper">
+        <h1>Login Here !</h1>
+        <form>
+          <input type="text" placeholder=" Enter Username" id="username">
+          <input type="text" placeholder="Enter Password" id="Password">
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+        </form>
+        <button onclick="login()">login</button>
+        
+        <p class="or">
+          ----- or continue with -----
+        </p>
+        <div class="icons">
+          <a href="https://devbaghel0061@gmail.com"><i class="fab fa-google"></i></a>
+          <a href="https://github.com/rdbaghel/rdbaghel"><i  class="fab fa-github"></i></a>
+          <a href="https://twitter.com/@DevBagh12170871"><i  class="fab fa-twitter"></i></a>
+        </div>
+        <div class="not-member">
+          Not a member? <a href="apidata.html">Register Now</a>
+        </div>
+      </div>
+      <script src="./login.js"></script>
+    </body>
+    </html>
+ 
+    
