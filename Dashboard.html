@@ -6,10 +6,9 @@
   <link rel="stylesheet" href="Dashboard.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <style>
-    /* Additional style for demonstration purposes */
     .active {
       font-weight: bold;
-      color: blue;
+      color: rgb(65, 65, 213);
     }
   </style>
 </head>
@@ -75,7 +74,7 @@
     </nav>
     <section class="main">
       <div class="main-top">
-        <h1>Skills</h1>
+        <h1>JOIN NOW</h1>
         <i class="fas fa-user-cog"></i>
       </div>
       <div class="main-skills">
@@ -111,37 +110,63 @@
             <li class="tab active" data-tab="finished">Finished</li>
             <li class="tab" data-tab="explore">Explore</li>
             <li class="tab" data-tab="inprogress">Inprogress</li>
-            <li class="tab" data-tab="incoming">Incoming</li>
+            <li class="tab" data-tab="incoming">Upcoming</li>
           </ul>
           <div class="course">
             <div class="box active" data-tab="finished">
               <h3>HTML</h3>
-              <p id="htmlProgress">100% - progress</p>
+              <p id="htmlProgress">100% - progress </p>
               <button id="htmlContinue">Continue</button>
               <i class="fab fa-html5 html"></i>
             </div>
             <div class="box" data-tab="explore">
               <h3>CSS</h3>
-              <p id="cssProgress">97% - progress</p>
+              <p id="cssProgress">98.99% - progress </p>
               <button id="cssContinue">Continue</button>
               <i class="fab fa-css3-alt css"></i>
             </div>
             <div class="box" data-tab="inprogress">
               <h3>JavaScript</h3>
-              <p id="jsProgress">72% - progress</p>
+              <p id="jsProgress">72% - progress </p>
               <button id="jsContinue">Continue</button>
               <i class="fab fa-js-square js"></i>
             </div>
             <div class="box" data-tab="incoming">
               <h3>React</h3>
-              <p id="reactProgress">20% - progress</p>
+              <p id="reactProgress">20% - progress </p>
               <button id="reactContinue">Continue</button>
               <i class="fab fa-react react"></i>
             </div>
           </div>
         </div>
+        </section>
+   <!--  FOR WALLET   -->  
+
+      <section class="main-wallet">
+        <h1>Wallet</h1>
+        <div class="wallet-info">
+          <p>Your current balance:</p>
+         <b><p id="walletAmount">Rupees = 500.00 </p></b> 
+        </div>
+        <div class="wallet-actions">
+          <button id="addFundsButton" class="wallet-button">Add Funds</button>
+          <button id="withdrawFundsButton" class="wallet-button">Withdraw Funds</button>
+        </div>
       </section>
-    </section>
+
+      <!-- Analytics Section -->
+
+ <section class="main-analytics">
+  <h1>Analytics</h1>
+  <div class="analytics-info">
+    <p>Graphical representation of data:</p>
+    <div id="analyticsGraph" class="analytics-graph">
+    <p>Loading...</p>
+    </div>
+  </div>
+</section>
+
+</section>
   </div>
 
   <script src="Dashboard.js"></script>
