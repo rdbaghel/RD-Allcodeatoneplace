@@ -1,4 +1,3 @@
-/* <span style="font-family: verdana, geneva, sans-serif;"> import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
 *{
   margin: 0;
@@ -19,10 +18,10 @@ nav{
   position: relative;
   top: 0;
   bottom: 0;
-  height: 100vh;
+  height: 216.5vh;
   left: 0;
   background: #fff;
-  width: 285px;
+  width: 320px;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
@@ -32,9 +31,9 @@ nav{
   margin: 9px 0 0 9px;
 }
 .logo img{
-  width: 70px;
-  height: 85px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
 }
 .logo span{
   font-weight: bold;
@@ -48,7 +47,7 @@ a{
   font-size: 14px;
   display: table;
   width: 280px;
-  padding: 10px;
+  padding: 45px;
 }
 nav .fas{
   position: relative;
@@ -189,4 +188,79 @@ a:hover{
 .js{
   color: rgb(28, 98, 179);
 }
-  /* </span> */
+
+/* Additional CSS for Wallet section */
+
+/* Wallet section styles */
+.main-wallet {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fffafa;
+  border-radius: 5px;
+}
+
+.wallet-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.wallet-amount {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.wallet-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wallet-button:hover {
+  background-color: darkblue;
+}
+
+/* Additional CSS for Analytics section */
+
+/* Analytics section styles */
+.main-analytics {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+}
+
+.analytics-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.analytics-graph {
+  height: 550px; 
+  background-color: #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+}
+.analytics-graph{
+  background-image: url('chart img other.png');
+  width: 895px;
+  
+}
+
+.analytics-graph p {
+  margin: 0;
+}
+
+
