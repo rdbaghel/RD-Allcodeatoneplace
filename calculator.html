@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div><b><a class="calculator">Calculator :-</a></b></div> -->
+    <table border="2px" align="center" cellpadding="25px" cellspacing="15px" bgcolor="silver">
+        <tr align="center" bgcolor="white">
+           <td colspan="4" id="ans"> </td>
+
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td onclick="calculate(1)">1</td>
+            <td onclick="calculate(2)">2</td>
+            <td onclick="calculate(3)">3</td>
+            <td onclick="calculate(4)">4</td>
+
+        </tr>
+
+        <tr align="center" bgcolor="white">
+            <td onclick="calculate(5)">5</td>
+            <td onclick="calculate(6)">6</td>
+            <td onclick="calculate(7)">7</td>
+            <td onclick="calculate(8)">8</td>
+        </tr>
+
+        <tr align="center" bgcolor="white">
+            <td onclick="calculate(9)">9</td>
+            <td onclick="calculate(0)">0</td>
+            <td onclick="calculate('+')">+</td>
+            <td onclick="calculate('-')">-</td>
+
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td onclick="calculate('*')">*</td>
+            <td onclick="calculate('!')">\</td>
+            <td onclick="calculate('log')">%</td>
+            <td onclick="calculate('e')">e</td>
+        </tr>
+
+        <tr align="center" bgcolor="white">
+            <td onclick="calculate('$')">$</td>
+            <td onclick="calculate('sqr')">sqr</td>
+            <td onclick="calculate('sin')">sin</td>
+            <td onclick="final()">=</td>
+
+
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td onclick="del()">dlt</td>
+            <td onclick="ac()">ac</td>
+            <td onclick="calculate('.')">.</td>
+            <td onclick="cube()">a <sup>3</sup></td>
+            
+            
+
+
+        </tr>
+
+
+    </table>
+    <script src="calculate.js"></script>
+</body>
+</html>
+ <!-- by can't i print more than two digits number in calspace? -->

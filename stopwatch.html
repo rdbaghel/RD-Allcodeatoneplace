@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      *{
+        font-family: "pacifico",cursive;
+         font-family: 400;
+         font-style: normal;
+      }
+      #main{
+        display:flex;
+        justify-content: center;
+        font-size: 2.5vw;
+        padding: 10px;
+        margin: 0 10px;
+        gap: 4vw;
+        margin-top: 50px;
+    }
+    #start{
+    font-size: 1.6vw;
+    padding: 0px;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  #stop{
+    font-size: 1.6vw;
+    padding: 3px;
+    margin: 0 ;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  #restart{
+    font-size: 1.6vw;
+    padding: 3px;
+    margin: 0 ;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .watch-face {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+        
+      /* 
+      #hours{
+        position: fixed;
+        block-size: 50px;
+        border: 2px;
+        font-size: 30px;
+        content: hours;
+      }
+      #minutes{
+        position: fixed;
+        block-size: 50px;
+        border: 2px;
+        font-size: 30px;
+        content: minutes;
+      }
+      #second{
+        position: fixed;
+        block-size: 50px;
+        border: 2px;
+        font-size: 30px;
+        content: seconds;
+      } */
+
+    </style>
+</head>
+<body onload="timer()">
+    <section id="main">
+ <div class="watch-face">
+<i class="fas fa-stopwatch"></i>
+ </div>
+    <div id="hours">0</div>
+    <div id="minutes">0</div>
+    <div id="seconds">0</div>
+<button id="start"> Start </button>
+<button id="stop"> Stop </button>
+<button id="restart"> Reset </button>
+    </section>
+
+    <script src="stopwatch.js"></script>
+    
+</body>
+</html>
