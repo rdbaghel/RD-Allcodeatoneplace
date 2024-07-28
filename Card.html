@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #card {
+            
+               width: 200px;
+                /* display: grid;
+                grid-template-columns:auto auto auto; */
+                /* gap: 10px; */
+                text-align: center;
+                border: 5px solid #ccc;
+                padding: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                font-size: 16px;
+                font-family: Georgia, 'Times New Roman', Times, serif   ;
+                transition: .5s ease-in;
+            
+            }
+            #card:hover{
+                color: rgb(176, 12, 191);
+                background-color: rgb(209, 137, 36);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: space-evenly;" id="output"></div>
+        <div id="card">
+            <img src="${p.pimage}" width="200px" alt="">
+            <div>${p.pname}</div>
+            <div>${p.prating}</div>
+            <div>${p.pprice}</div>
+            <div>${p.pdiscount}</div>
+            <div>${p.pbrand}</div>
+        </div>
+        <!-- obj.is keys and values combination is called object. -->
+         <script src=".card.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
