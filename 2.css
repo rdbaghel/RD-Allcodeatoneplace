@@ -1,0 +1,59 @@
+body {
+   font-family: Baskerville Old Face;
+   background-color:rgba(174, 171, 171, 0.962);
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 102vh;
+}
+
+.signup-box {
+   background-color: rgb(55, 192, 114);
+   border-radius: 13px;
+   box-shadow: 10 10 5px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   width: 305px;
+   height:480px;
+   border: 1.5px solid rgb(28, 28, 26);
+}
+
+.signup-box h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color:rgb(130, 56, 56);
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"],
+.signup-box input[type="submit"], 
+.signup-box input[type="number"]
+{
+   width: 80%;
+   padding: 10px;
+   left: 35px;
+   border: 1px rgba(21, 19, 19, 0.752);
+   border-radius: 25px;
+   box-sizing: border-box;
+   align-items: center;
+}
+
+.btn-gradient {
+   background: linear-gradient(to right, #f17507, #ffdd00);
+   color: rgb(84, 13, 183);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .btn-gradient:hover {
+   background: linear-gradient(to right, #0056b3, #009acd);
+ }
+/* .img{
+   position: absolute;
+   width:350px;
+   height:400px;
+} */
