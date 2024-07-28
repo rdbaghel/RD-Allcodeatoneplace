@@ -79,3 +79,110 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+//js for profile section
+
+document.addEventListener('DOMContentLoaded', function() {
+  const profileForm = document.getElementById('profileForm');
+  const saveProfileBtn = document.getElementById('saveProfile');
+  const updateProfileBtn = document.getElementById('updateProfile');
+  const deleteProfileBtn = document.getElementById('deleteProfile');
+  const profileUrl = 'http://localhost:3000/Login_Data';
+
+//Event listener for creating/saving profiledata
+
+ saveProfileBtn.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(profileForm);
+    const profileData = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      bio: formData.get('bio')
+    };
+
+
+    fetch(profileUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(profileData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Profile saved:', data);
+      alert('profiledata is saved successfully!');
+  
+    })
+    .catch(error => {
+      console.error('Error saving profile:', error);
+      alert('profile not saved ! error');
+    });
+  });
+
+  //Event listener for updating profiledata
+
+  updateProfileBtn.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(profileForm);
+    const profileData = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      bio: formData.get('bio')
+    };
+
+    fetch(profileUrl, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(profileData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Profile updated:', data);
+      alert('profiledata is updated successfully!');
+    })
+    .catch(error => {
+      console.error('Error updating profile:', error);
+      alert('profiledata not updated ! error');
+    });
+  });
+
+  //Event listener for deleted profiledata
+
+  deleteProfileBtn.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    
+    fetch(profileUrl, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Profile deleted:', data);
+      alert('profiledata is deleted successfully!');
+    })
+    .catch(error => {
+      console.error('Error deleting profile:', error);
+      alert('profile not deleted ! error');
+    });
+  });
+
+});
